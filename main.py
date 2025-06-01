@@ -14,8 +14,8 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # --- Настройка окружения --- #
 load_dotenv()
-TOKEN = "7948057141:AAEgI_k8mtGdYMZA9wYXKT7jgdzvuOYaIAA"
-ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "1077073462").split(",")))
+TOKEN = ""
+ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
